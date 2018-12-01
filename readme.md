@@ -1,4 +1,4 @@
-# Vice City Main Menu
+# Corporate Blue
 Home page of Pcklaboratory studio template [Corporate Blue](http://www.pcklab.com/templates/corporate-blue).
 Inspired by [Mirantus](//habr.com/post/211032/).
 
