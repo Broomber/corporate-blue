@@ -1,0 +1,102 @@
+.carousel {
+}
+
+.carousel-inner {
+
+  &__item {
+    max-height: 280px;
+    height: 280px;
+    background-color: @brand-secondary-lighter;
+  }
+
+  &__img {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+  }
+
+  &__caption {
+    text-align: left;
+    top: 0 !important;
+    left: 0 !important;
+    right: auto !important;
+    bottom: auto !important;
+    padding: 3% !important;
+    font-family: @font-secondary;
+    text-shadow: none;
+  }
+
+  &__caption-heading {
+    margin-top: 0;
+    font-size: 3.5em;
+    font-weight: 300;
+    text-transform: uppercase;
+    color: @text-color-dark;
+  }
+
+  &__caption-text {
+    font-size: 1.65em;
+    font-weight: 300;
+  }
+
+}
+
+.carousel-indicators {
+  position: static;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: @brand-secondary-light;
+
+  &__item {
+    .make-sm-column(6);
+    .make-md-column(3);
+    width: 100%;
+    padding: 12px;
+    background-color: transparent;
+    font-family: @font-secondary;
+    text-align: left;
+    cursor: pointer;
+
+    &.active {
+      .make-sm-column(6);
+      .make-md-column(3);
+      width: 100%;
+      padding: 12px;
+      height: auto;
+
+      .carousel-indicators__number {
+        background-color: @brand-primary;
+      }
+
+      .carousel-indicators__heading {
+        color: @brand-primary;
+      }
+    }
+  }
+
+  &__number {
+    position: absolute;
+    width: 25px;
+    font-size: 1.5em;
+    font-weight: 300;
+    text-align: center;
+    background-color: @text-color;
+    color: white;
+  }
+
+  &__heading {
+    width: auto;
+    margin: 0;
+    margin-left: 35px;
+    font-size: 1.5em;
+    font-weight: 300;
+    line-height: 25px;
+    text-transform: uppercase;
+    color: @text-color-dark;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}

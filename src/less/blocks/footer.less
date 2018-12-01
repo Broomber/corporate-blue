@@ -1,0 +1,125 @@
+.footer {
+  .clearfix;
+  vertical-align: top;
+  color: @text-color-light;
+  background-color: @brand-secondary;
+
+  a {
+    color: @text-color-light;
+    text-decoration: none;
+  }
+
+  &__col {
+    .make-sm-column(6);
+    .make-md-column(4);
+    padding: 15px 10px;
+    text-align: center;
+    // display: inline-block;
+    // vertical-align: top;
+    // min-height: 140px;
+
+    @media (min-width: @screen-sm-min) {
+      text-align: left;
+    }
+
+    &--small {
+      .make-sm-column(3);
+      .make-md-column(2);
+      padding: 15px 10px;
+    }
+
+    &--big {
+      .make-sm-column(12);
+      .make-md-column(12);
+      padding: 15px 10px;
+    }
+  }
+}
+
+
+.footer-header {
+  margin-top: 0;
+  font-size: 1.1em;
+  color: white;
+  text-transform: uppercase;
+}
+.footer-line {
+  margin-top: 5px;
+  margin-bottom: 10px;
+  height: 1px;
+  border: none;
+  background-color: @text-color;
+}
+
+.twitter {
+  padding: 15px 10px;
+}
+
+.sitemap {
+  .hidden-sm;
+  .hidden-xs;
+  padding: 15px 10px;
+
+  &__content {
+    .clearfix;
+  }
+
+  &__list {
+    list-style: none;
+    margin: 0;
+    line-height: 1.75em;
+  }
+}
+
+.social {
+  padding: 15px 10px;
+
+  &__content {
+    margin-top: 15px;
+  }
+
+  &__icon {
+    background-image: url(../img/sprites/social-sprite.png);
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    margin: 2px;
+
+    &--small {
+      width: 16px;
+      height: 16px;
+    }
+  }
+
+  &__icon_facebook      { background-position: -2px -0px; }
+  &__icon_google-plus   { background-position: -2px -34px; }
+  &__icon_twitter       { background-position: -2px -68px; }
+  &__icon_flickr        { background-position: -2px -102px; }
+  &__icon_instagram     { background-position: -2px -120px; }
+  &__icon_rss           { background-position: -2px -138px; }
+  &__icon_vimeo         { background-position: -2px -156px; }
+  &__icon_youtube       { background-position: -2px -174px; }
+}
+
+.info {
+  .make-sm-column(3);
+  .make-md-column(4);
+  padding: 15px 10px;
+  text-align: center;
+
+  &__logo {
+    margin-top: 20px;
+    display: inline-block;
+  }
+
+  &__copyright {
+    margin-top: 15px;
+  }
+
+  &__copyright-text {}
+
+  @media (min-width: @screen-sm-min) {
+    text-align: right;
+  }
+}
