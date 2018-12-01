@@ -17,7 +17,7 @@ var gulp        = require('gulp'),
   reload        = browserSync.reload;
 
 var paths = {
-  deploy:     '.',
+  deploy:     'deploy',
   build:      'build',
   source:     'src',
   html:       'src/html/',
